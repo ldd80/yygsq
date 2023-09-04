@@ -1,1 +1,25 @@
-fdfsaf
+git 总是推送失败,提示:
+git.exe push --progress "origin" main:main
+fatal: 发送请求时出错。
+fatal: 请求被中止: 未能创建 SSL/TLS 安全通道。
+warning: git-credential-manager-core was renamed to git-credential-manager
+warning: see https://aka.ms/gcm/rename for more information
+fatal: 发送请求时出错。
+fatal: 请求被中止: 未能创建 SSL/TLS 安全通道。
+error: unable to read askpass response from 'C:\Program Files\TortoiseGit\bin\SshAskPass.exe'
+bash: line 1: /dev/tty: No such device or address
+error: failed to execute prompt script (exit code 1)
+fatal: could not read Username for 'https://github.com': No such file or directory
+git 未能顺利结束 (退出码 128) (38953 ms @ 2023/9/4 15:39:42)
+
+所以就在网页端上传了一个zip文件.
+
+有问题的地方:
+1.社区聊天信息,不会显示头像和昵称.可能的原因是后端没有社区成员列表,所以前端不会触发请求成员的用户信息.
+需求:改为动态加载模式,加载聊天记录时检查有无对应的用户信息,没有则动态从服务端请求,根据返回的用户信息更新头像和昵称.
+
+2.没有滚动条,所有窗口都没有滚动条.
+需求:除了最左侧的图标栏,其它窗口如果页面过长需要显示出滚动条.
+
+3.个人和好友资料太过简单
+需求:个人资料页面加上个人简介,联系方式和修改密码的功能.增加查看好友资料的页面,好友资料上可以编辑称呼和备注;
