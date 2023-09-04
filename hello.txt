@@ -24,5 +24,5 @@ git 未能顺利结束 (退出码 128) (38953 ms @ 2023/9/4 15:39:42)
 3.个人和好友资料太过简单
 需求:个人资料页面加上个人简介,联系方式和修改密码的功能.增加查看好友资料的页面,好友资料上可以编辑称呼和备注;
 
-3.原工程的 npm build 是不能用的 , npm start 能用,但是如果把 scripts/build.js 改名为 scripts/start.js , 然后执行 npm start 又是能够 build 功能.
+3.原工程的 npm build 是不能用的 , npm start 能用,但是如果把 scripts/build.js 改名为 scripts/start.js , 然后执行 npm start 又是能够使用 build 功能的.
 需求:不用改名也能 build 成功.
